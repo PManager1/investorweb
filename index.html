@@ -7,76 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {
-    margin-bottom: 45px;
-    font-size: 35px;
-    font-weight: bolder;
-  }
-  .bg-1 { 
-      background-color: #6bb8e6;
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; 
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff;
-      color: #555555;
-  }
-  .main-btn {
-    border-radius: 25px;
-    border: 2px solid #edbdde;
-    cursor: default;
-    padding: 12px 5px;
-    text-decoration: none;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f;
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  .monthly{
-    color: white;
-    padding: 0px 5px;
-  }
-  .annual {
-    background: white;
-    color: #8f8787;
-    padding: 12px 11px;
-    position: relative;
-    left: 5px;
-    border-radius: 25px;
-  }
-  .font-14 {
-    font-size: 14px;
-  }
-  .footer {
-    background-color: #6bb8e6;
-  }
-  </style>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
@@ -116,7 +47,7 @@
 </div>
 
 <!-- Second Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<!-- <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Some text will come here</h3><br>
   <div class="row">
     <div class="col-sm-4">
@@ -132,6 +63,77 @@
       <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
+</div> -->
+
+<div id="pricing" class="container-fluid">
+    <div class="text-center">
+        <h2>Pricing</h2>
+        <h4>Choose a payment plan that works for you</h4>
+    </div>
+    <div class="row slideanim slide">
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Basic</h1>
+                </div>
+
+
+ 
+
+ 
+
+ 
+                <div class="panel-body">
+                    <p><strong>10GB</strong> Storage</p>
+                    <p><strong>10</strong> Emails</p>
+                    <p><strong>10</strong> Domains</p>
+                    <p><strong>1GB</strong> Bandwidth</p>
+                    <!-- <p><strong>Endless</strong> Bandwidth</p> -->
+                </div>
+                <div class="panel-footer">
+                    <h3>$19</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Pro</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>25GB</strong> Storage</p>
+                    <p><strong>25</strong> Emails</p>
+                    <p><strong>25</strong> Domains</p>
+                    <p><strong>2GB</strong> Bandwidth</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$29</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Premium</h1>
+                </div>
+                <div class="panel-body">
+                    <p><strong>50GB</strong> Storage</p>
+                    <p><strong>50</strong> Emails</p>
+                    <p><strong>50</strong> Domains</p>
+                    <p><strong>5GB</strong> Bandwidth</p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$49</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Third Container -->
