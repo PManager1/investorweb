@@ -13,4 +13,12 @@ $(document).ready(function(){
     	// $(this).removeClass("").addClass("annual");
     	// $("#togmnt").removeClass().addClass();
     });
+    $('#chk-click').bootstrapToggle({
+      on: 'Monthly',
+      off: 'Yearly'
+    }).change(function(){
+       $("#monthly").toggle();
+       $("#yearly").toggle();
+    });
+    
 });
