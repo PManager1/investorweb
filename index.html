@@ -1,167 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Inverstor Web</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles/main.css">
+<title>Inverstor Web</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./javascript/my_functions.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Review</a></li>
-        <li><a href="#">Price</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Welcome, investors</h3>
-  <h3>90 day trial period (no credit card required) cancel anytime, no strings attached</h3>
-  <br/>
-  <a class="main-btn">
-    <span class="monthly">Monthly</span>
-    <span class="annual">
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Welcome, investors</h3>
+        <h3>90 day trial period (no credit card required) cancel anytime, no strings attached</h3>
+        <br/>
+        <a class="main-btn">
+    <span class="monthly" id="togmnt">Monthly</span>
+    <span class="annual" id="togyr">
       Annual 
         <span class="font-14">(Save 20%)</span>
     </span>
   </a>
-</div>
+    </div>
 
-<!-- Second Container (Grid) -->
-<!-- <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Some text will come here</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div> -->
-
-<div id="pricing" class="container-fluid">
-    <div class="text-center">
-        <h2>Pricing</h2>
-        <h4>Choose a payment plan that works for you</h4>
-    </div>
-    <div class="row slideanim slide">
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Basic</h1>
+    <div id="pricing" class="container-fluid">
+        <div class="text-center">
+            <h2>Pricing</h2>
+            <h4>Choose a payment plan that works for you</h4>
+        </div>
+        <div id="monthly" style="display: none;" class="row slideanim slide">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>10GB</strong> Storage</p>
+                        <p><strong>10</strong> Emails</p>
+                        <p><strong>10</strong> Domains</p>
+                        <p><strong>1GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$19</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
                 </div>
-
-
- 
-
- 
-
- 
-                <div class="panel-body">
-                    <p><strong>10GB</strong> Storage</p>
-                    <p><strong>10</strong> Emails</p>
-                    <p><strong>10</strong> Domains</p>
-                    <p><strong>1GB</strong> Bandwidth</p>
-                    <!-- <p><strong>Endless</strong> Bandwidth</p> -->
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Pro</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>25GB</strong> Storage</p>
+                        <p><strong>25</strong> Emails</p>
+                        <p><strong>25</strong> Domains</p>
+                        <p><strong>2GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$29</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
                 </div>
-                <div class="panel-footer">
-                    <h3>$19</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Buy</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Premium</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>50GB</strong> Storage</p>
+                        <p><strong>50</strong> Emails</p>
+                        <p><strong>50</strong> Domains</p>
+                        <p><strong>5GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$49</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Pro</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>25GB</strong> Storage</p>
-                    <p><strong>25</strong> Emails</p>
-                    <p><strong>25</strong> Domains</p>
-                    <p><strong>2GB</strong> Bandwidth</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$29</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Buy</button>
+        <div id="yearly" class="row slideanim slide">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>10GB</strong> Storage</p>
+                        <p><strong>10</strong> Emails</p>
+                        <p><strong>10</strong> Domains</p>
+                        <p><strong>1GB</strong> Bandwidth</p>
+                        <!-- <p><strong>Endless</strong> Bandwidth</p> -->
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$100</h3>
+                        <h4>per year</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Premium</h1>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Pro</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>25GB</strong> Storage</p>
+                        <p><strong>25</strong> Emails</p>
+                        <p><strong>25</strong> Domains</p>
+                        <p><strong>2GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$200</h3>
+                        <h4>per year</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <p><strong>50GB</strong> Storage</p>
-                    <p><strong>50</strong> Emails</p>
-                    <p><strong>50</strong> Domains</p>
-                    <p><strong>5GB</strong> Bandwidth</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$49</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Buy</button>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Premium</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>50GB</strong> Storage</p>
+                        <p><strong>50</strong> Emails</p>
+                        <p><strong>50</strong> Domains</p>
+                        <p><strong>5GB</strong> Bandwidth</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$300</h3>
+                        <h4>per year</h4>
+                        <button class="btn btn-lg">Buy</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Third Container -->
-<div class="container-fluid bg-3 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
+    <!-- Third Container -->
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">What Am I?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Search
   </a>
-</div>
-
-<div class="container-fluid bg-2 text-center">
-  <h1>Subscribe</h1> 
-  <p>We specialize in blablabla</p> 
-  <form class="form-inline">
-    <div class="form-group">
-      <input type="email" class="form-control" size="25" placeholder="Enter Your Email Address" required="">
     </div>
-      <div class="form-group">
-        <button type="button" class="btn btn-danger">Try now</button>
-      </div>
-  </form>
-</div>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center footer">
-  <p>footer of page will come here <a href="#">footer</a></p> 
-</footer>
+    <div class="container-fluid bg-2 text-center">
+        <h1>Subscribe</h1>
+        <p>We specialize in blablabla</p>
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="email" class="form-control" size="25" placeholder="Enter Your Email Address" required="">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-danger">Try now</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center footer">
+        <p>footer of page will come here <a href="#">footer</a></p>
+    </footer>
 
 </body>
+
 </html>

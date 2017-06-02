@@ -4,6 +4,40 @@
       line-height: 1.8;
       color: #f5f6f7;
   }
+
+ /* monthly-main {
+background: white;
+padding: 12px 18px;
+position: relative;
+left: -6px;
+border-radius: 25px;
+text-decoration: none;
+color: #8F8786;
+}
+
+monthly-second {
+ color: white;
+ padding: 0px 5px;
+}
+
+annual-second {
+    color: #8F8786;
+    position: relative;
+    left: 5px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+annual-main {
+    background: white;
+    color: #8f8787;
+    padding: 12px 11px;
+    position: relative;
+    left: 5px;
+    border-radius: 25px;
+}
+*/
   p {font-size: 16px;}
   .margin {
     margin-bottom: 45px;
@@ -27,6 +61,9 @@
     border: 2px solid #edbdde;
     cursor: default;
     padding: 12px 5px;
+    text-decoration: none;
+  }
+  .main-btn:hover {
     text-decoration: none;
   }
   .bg-4 { 
